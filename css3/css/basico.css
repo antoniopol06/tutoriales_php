@@ -1,0 +1,26 @@
+#cabecera {
+  background: #00f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0 auto;
+  width: 80%;
+}
+#principal {
+  margin: 0 auto;
+  width: 80%;
+}
+#menu {
+  background: #000;
+  display: inline-block;
+  height: 400px;
+  width: 20%;
+  vertical-align: top;
+}
+#info {
+  background: #ffa500;
+  display: inline-block;
+  height: 400px;
+  width: 80%;
+  vertical-align: top;
+}

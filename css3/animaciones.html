@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <head>
+      <meta charset="utf-8"/>
+      <meta name="author" content="Antonio Pol"/>
+    <link rel="stylesheet" type="text/css" href="css/animaciones.css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <title>Jquery y AJAX</title>
+  </head>
+    <body>
+      <section id="animacionHoverCSS">
+          Animación CSS Hover
+      </section>
+    <section id="animacionHoverJquery">
+          Animación Jquery Hover
+      </section>
+    <section id="animacionClickJquery">
+        Animación Jquery Click
+    </section>
+    <script>
+        $(document).on("ready",iniciar);
+        function iniciar()
+        {
+            $("#animacionHoverJquery").on("mouseover", jqueryover);
+            $("#animacionHoverJquery").on("mouseout", jqueryout);
+            $("#animacionClickJquery").on("click",jqueryclick);
+        }
+        function jqueryover()
+        {
+            var cambios={
+                width:"300px"
+            };
+             $("#animacionHoverJquery").css(cambios);
+        }
+        function jqueryout()
+        {
+            var cambios={
+                width:"250px"
+            };
+             $("#animacionHoverJquery").css(cambios);
+        }
+        function jqueryclick()
+        {
+            var cambios={
+                width:"300px"
+            };
+                $("#animacionClickJquery").css(cambios);
+        }
+    </script>
+    </body>
+</html>
+

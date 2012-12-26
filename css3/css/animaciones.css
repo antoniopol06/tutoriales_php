@@ -1,0 +1,25 @@
+body
+{
+    font-size:16px;
+}
+#animacionHoverCSS, #animacionHoverJquery, #animacionClickJquery
+{
+    color:#efefef;
+    background:#333;
+    margin:1em 0;
+    padding:2em;
+    text-align: center;
+    width:250px;
+}
+
+#animacionHoverCSS, #animacionHoverJquery, #animacionClickJquery
+{
+    transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+}
+
+#animacionHoverCSS:hover
+{
+    width:300px;
+}
+
