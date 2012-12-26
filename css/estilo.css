@@ -1,0 +1,59 @@
+body{
+    width:100%;
+    font-family: arial;
+    background-color: #d9ddde;
+}
+
+header{
+    width:800px;
+    margin:0 auto;
+    margin-top:40px;
+    color:#333333;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #333333;
+}
+
+.ap{
+    color:#3315c9;
+}
+
+#contenido{
+    width:800px;
+    margin:0 auto;
+}
+
+#izquierda{
+    width:400px;
+    float:left;
+    margin-top:20px;
+}
+
+#derecha{
+    width:400px;
+    float:right;
+    margin-top:20px;
+}
+
+section article{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: #cddce0;
+    margin-bottom: 4px;
+}
+
+section article a:visited{
+    color:blue;
+}
+
+.numtutorial{
+    font-size: 1.2em;
+    font-weight: bold;
+    color:blue;
+}
+
+footer{
+    margin-top:50px;
+}

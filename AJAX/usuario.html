@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <link rel="shortcut icon" href="images/favicon.ico"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <meta name="author" content="Antonio Pol"/>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" media="screen" />
+    <title>AJAX</title>
+  </head>
+    <body>
+        <header>
+            Video Tutoriales por <span class="ap">Antonio Pol</span>
+        </header>
+        <section id="contenido">
+            <form action="#" name="formulario" method="post" >
+                <label for="usuario">Usuario</label><input onblur="validarusuario(this);" type="text" name="usuario" id="usuario"/>
+                <span id="comprobarusuario"></span><br/>
+                <label for="pass">Pass</label><input type="password" id="pass" name="pass"/><br/>
+                <input type="submit" value="Subir"/>
+            </form>
+        </footer>
+        </section>
+        <script src="prototype.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        function validarusuario(usuario)
+        {
+          var url = 'validarusuario.php';
+          var parametros='usuario='+usuario.value;
+          var ajax = new Ajax.Updater('comprobarusuario',url,{method: 'get', parameters: parametros});
+        }  
+</script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta  charset="utf-8" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<title>Productos</title>
+<link href="css/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript">
+$(document).ready(cargarproductos(0));
+function cargarproductos(limite)
+{
+	var url="cargarproductos.php";
+	$.post(url,{limite: limite},function (responseText){
+		$("#productos").html(responseText);
+	});
+}
+</script>
+<body>
+<section id="productos">
+</section>
+</body>
+</html>
