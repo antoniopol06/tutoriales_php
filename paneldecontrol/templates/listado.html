@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Listado</title>
+</head>
+<body>
+	<h1>Agregar Usuario</h1>
+	<form action="agregar.php" method="post">
+		<label for="usuario">Usuario</label><br/>
+		<input type="text" name="usuario" id="usuario"><br/>
+		<label for="pass">Pass</label><br/>
+		<input type="password" name="pass" id="pass"><br/>
+		<input type="submit" value="Agregar Usuario"/>
+	</form>
+	<h1>Listado</h1>
+	{foreach name=usuarios from=$usuarios item=usuario}
+		<p>{$usuario.usuario}</p>
+	{foreachelse}
+		<p>No existen usuarios actualmente</p>
+	{/foreach}
+</body>
+</html>
