@@ -15,7 +15,8 @@
 	</form>
 	<h1>Listado</h1>
 	{foreach name=usuarios from=$usuarios item=usuario}
-		<p>{$usuario.usuario}</p>
+		<p>{$usuario.usuario} <a href="editar.php?id={$usuario.id}" title="Editar">Editar</a> | 
+		<a href="borrar.php?id={$usuario.id}" onclick="return confirm('Desea borrar este usuario')" title="Borrar">Borrar</a></p>
 	{foreachelse}
 		<p>No existen usuarios actualmente</p>
 	{/foreach}

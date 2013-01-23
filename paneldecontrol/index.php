@@ -1,4 +1,9 @@
 <?php
+    session_start();
+    if(empty($_SESSION["admin"]))
+    {
+        header("location: acceso.php");
+    }else{
     include('../../include_videotutoriales/configpc.php');
     $db = new mysqli("localhost", "administrador", "123456", "tutoriales");
     $html=new Smarty;
@@ -14,5 +19,5 @@
     }
     $html->assign("usuarios",$usuarios);
     $html->display("listado.html");
-
+    }
 ?>

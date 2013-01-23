@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.4, created on 2013-01-05 12:22:04
+<?php /* Smarty version Smarty-3.0.4, created on 2013-01-11 17:03:34
          compiled from ".\templates\listado.html" */ ?>
-<?php /*%%SmartyHeaderCode:1388350e80cdcf0b354-73471445%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2562150f037d6cf4bf5-83302487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cdd0c6ec9965644df71ec6eb0e96d6a8a7d89367' => 
     array (
       0 => '.\\templates\\listado.html',
-      1 => 1357384920,
+      1 => 1357920212,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1388350e80cdcf0b354-73471445',
+  'nocache_hash' => '2562150f037d6cf4bf5-83302487',
   'function' => 
   array (
   ),
@@ -39,7 +39,10 @@ if ($_smarty_tpl->_count($_from) > 0){
     foreach ($_from as $_smarty_tpl->tpl_vars['usuario']->key => $_smarty_tpl->tpl_vars['usuario']->value){
 ?>
 		<p><?php echo (isset($_smarty_tpl->tpl_vars['usuario']->value['usuario']) ? $_smarty_tpl->tpl_vars['usuario']->value['usuario'] : null);?>
-</p>
+ <a href="editar.php?id=<?php echo (isset($_smarty_tpl->tpl_vars['usuario']->value['id']) ? $_smarty_tpl->tpl_vars['usuario']->value['id'] : null);?>
+" title="Editar">Editar</a> | 
+		<a href="borrar.php?id=<?php echo (isset($_smarty_tpl->tpl_vars['usuario']->value['id']) ? $_smarty_tpl->tpl_vars['usuario']->value['id'] : null);?>
+" onclick="return confirm('Desea borrar este usuario')" title="Borrar">Borrar</a></p>
 	<?php }} else { ?>
 		<p>No existen usuarios actualmente</p>
 	<?php } ?>

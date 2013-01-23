@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Editar</title>
+</head>
+<body>
+	<h1>Editar Usuario: {$usuario.usuario}</h1>
+	<form action="editar.php" method="post">
+		<label for="usuario">Usuario</label><br/>
+		<input type="hidden" id="id" name="id" value="{$usuario.id}"/>
+		<input type="text" name="usuario" id="usuario" value='{$usuario.usuario}'><br/>
+		<label for="pass">Pass</label><br/>
+		<input type="hidden" name="passantigua" id="passantigua" value="{$usuario.pass}"/>
+		<input type="password" name="pass" id="pass"><br/>
+		<input type="submit" value="Editar Usuario"/>
+	</form>
+</body>
+</html>
