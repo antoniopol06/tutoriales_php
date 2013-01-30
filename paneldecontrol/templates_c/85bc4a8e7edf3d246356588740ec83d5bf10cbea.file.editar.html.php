@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.4, created on 2013-01-11 17:00:36
+<?php /* Smarty version Smarty-3.0.4, created on 2013-01-30 16:16:47
          compiled from ".\templates\editar.html" */ ?>
-<?php /*%%SmartyHeaderCode:1649450f037243e2bf7-21351747%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:152945109395f1546e9-14964873%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '85bc4a8e7edf3d246356588740ec83d5bf10cbea' => 
     array (
       0 => '.\\templates\\editar.html',
-      1 => 1357919810,
+      1 => 1359558916,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1649450f037243e2bf7-21351747',
+  'nocache_hash' => '152945109395f1546e9-14964873',
   'function' => 
   array (
   ),
@@ -37,6 +37,9 @@ $_smarty_tpl->decodeProperties(array (
 "/>
 		<input type="password" name="pass" id="pass"><br/>
 		<input type="submit" value="Editar Usuario"/>
+	</form>
+	<form action="salir.php" method="post">
+		<input type="submit" value="Salir"/>
 	</form>
 </body>
 </html>

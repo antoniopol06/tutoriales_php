@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.4, created on 2013-01-11 17:03:34
+<?php /* Smarty version Smarty-3.0.4, created on 2013-01-30 16:15:19
          compiled from ".\templates\listado.html" */ ?>
-<?php /*%%SmartyHeaderCode:2562150f037d6cf4bf5-83302487%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:882551093907147f18-99934049%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cdd0c6ec9965644df71ec6eb0e96d6a8a7d89367' => 
     array (
       0 => '.\\templates\\listado.html',
-      1 => 1357920212,
+      1 => 1359558910,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2562150f037d6cf4bf5-83302487',
+  'nocache_hash' => '882551093907147f18-99934049',
   'function' => 
   array (
   ),
@@ -46,5 +46,8 @@ if ($_smarty_tpl->_count($_from) > 0){
 	<?php }} else { ?>
 		<p>No existen usuarios actualmente</p>
 	<?php } ?>
+	<form action="salir.php" method="post">
+		<input type="submit" value="Salir"/>
+	</form>
 </body>
 </html>
